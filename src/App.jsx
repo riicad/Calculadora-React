@@ -9,11 +9,13 @@ function App() {
     <div className="container">
       <div className="calculator">
         <form action="">
-
+            
+          {/*caixa de entrada e saida de dados da calculadora */}
              <div className="display">
               <input type="text" value={value}/>
             </div>
-
+          
+          {/*botões da calculadora */}
           <div>
             <input type="button" value="AC" onClick={e => setValue('')}/>
             <input type="button" value="DE" onClick={e => setValue(value.slice(0, -1))}/>
